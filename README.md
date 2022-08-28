@@ -1,34 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Minimalist Next.js theme for Ghost CMS 
 
-## Getting Started
+[Try the demo](https://raulmar0.github.io/nextjs-md-theme/)
 
-First, run the development server:
+##  Table of Contents
+1. [Features](#Features)
+2. [Getting started](#getting-started)
+3. [Customization](#customization)
+3. [Deploy to production](#deploy-to-production)
 
-```bash
-npm run dev
-# or
-yarn dev
+
+## Features
+
+- 🔥 [Next.js](https://nextjs.org) for Static Site Generator
+- ⬇️ [Markdown](https://www.markdownguide.org/getting-started/) for the content
+- 🎨 Integrate with [Tailwind CSS](https://tailwindcss.com)
+- 💅 [PostCSS](https://postcss.org) for processing [Tailwind CSS](https://tailwindcss.com)
+- 🎉 Type checking [TypeScript](https://www.typescriptlang.org)
+- 📱 Responsive
+- ⏺ Easy to configure
+## Built-in feature from Next.js:
+
+- ☕ Minify HTML & CSS
+- 💨 Live reload
+- ✅ Cache busting
+
+
+## Getting started
+
+Run the following command on your local environment:
+
+```
+git clone --depth=1 https://github.com/raulmar0/nextjs-ghost-template.git my-project-name
+cd my-project-name
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then, you can run locally in development mode with live reload:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+npm run dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Customization
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+You can easily configure Next js Boilerplate. Please change the following file:
 
-## Learn More
+- Posts in `_posts` directory
+- Other pages such as "about" in `_misc` directory
+- General styles in `./styles/globals.scss`
+- Blogpost styles in `./styles/globals.scss` under the `.post-` classes
+- Favicon `./public`
+- Main config file `./utils/AppConfig.ts`
+  - Site name, title and description
+  - Projects
+  - Social media links
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy to production
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+In order to deploy your static site run:
 
-## Deploy on Vercel
+```
+$ npm run export
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The generated HTML and CSS files are minified (built-in feature from Next js). It will also removed unused CSS from [Tailwind CSS](https://tailwindcss.com).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Now, your blog is ready to be deployed. All generated files are located at `_static` folder, which you can deploy with any hosting service.
+
+Verified hosting services with a free tier
+- Github pages
+- Azure app services
+- Digital Ocean Web Apps

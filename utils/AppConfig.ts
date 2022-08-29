@@ -1,7 +1,7 @@
 export const AppConfig = {
-  site_name: 'raulmar site',
-  title: "Hola! this is raulmar🕺",
-  description: 'Welcome to my digital home where I have fun sharing',
+  site_name: 'Next.js + Markdown',
+  title: "👋 This is Next.js ⚡️ using Markdown ⬇️",
+  description: 'Starter code for your site',
   linkedin_account: 'raulmarhernandez',
   github_account: 'raulmar0',
   email: 'hello@raulmar.com',

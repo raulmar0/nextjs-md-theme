@@ -4,10 +4,4 @@ const nextConfig = {
   swcMinify: true,
 }
 
-// Without gh pages or for develop
-// module.exports = nextConfig
-
-// With gh pages
-module.exports = {
-  basePath: '/raulmar-site',
-}
+module.exports = nextConfig

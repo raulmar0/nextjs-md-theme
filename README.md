@@ -1,4 +1,4 @@
-# Minimalist Next.js theme for Ghost CMS 
+# Minimalist Next.js theme for Markdown content 
 
 [Try the demo](https://raulmar0.github.io/nextjs-md-theme/)
 
@@ -30,7 +30,7 @@
 Run the following command on your local environment:
 
 ```
-git clone --depth=1 https://github.com/raulmar0/nextjs-ghost-template.git my-project-name
+git clone --depth=1 https://github.com/raulmar0/nextjs-md-theme.git my-project-name
 cd my-project-name
 npm install
 ```
